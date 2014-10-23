@@ -291,7 +291,7 @@ PIXI.DragAndDropManager.prototype.onDrag = function(item, mouse)
             var validHandle = false;
 
             // loop through children to find a valid handle
-            for(i = item.children.length; i >= 0; i--)
+            for(i = item.children.length - 1; i >= 0; i--)
             {
                 child = item.children[i];
                 if((child.label === options.handle || (child.__draggable && child.dragOptions.label === options.handle) || (child.__droppable && child.dropOptions.label === options.handle)) && item.stage.interactionManager.hitTest(child, mouse))
@@ -324,7 +324,7 @@ PIXI.DragAndDropManager.prototype.onDrag = function(item, mouse)
         if(typeof options.cancel === 'string')
         {
             // loop through children to find a cancel
-            for(i = item.children.length; i >= 0; i--)
+            for(i = item.children.length - 1; i >= 0; i--)
             {
                 child = item.children[i];
                 if((child.label === options.cancel || (child.__draggable && child.dragOptions.label === options.cancel) || (child.__droppable && child.dropOptions.label === options.cancel)) && item.stage.interactionManager.hitTest(child, mouse))
