@@ -108,6 +108,12 @@
     // both name and val set
     else if(this.dragOptions)
     {
+        // make sure draggable was initialized
+        if(!this.__draggable)
+        {
+            this.draggable();
+        }
+
         this.dragOptions[name] = val;
 
         // only initialize this array if we actually use snap
@@ -161,6 +167,12 @@ PIXI.DisplayObject.prototype.droppable = function( name, val )
     // both name and val set
     else if(this.dropOptions)
     {
+        // make sure droppable was initialized
+        if(!this.__droppable)
+        {
+            this.droppable();
+        }
+
         this.dropOptions[name] = val;
     }
 
