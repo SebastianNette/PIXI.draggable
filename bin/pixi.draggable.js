@@ -321,13 +321,6 @@ PIXI.DragAndDropManager.prototype.onDrag = function(item, mouse)
                     return;
                 }
             }
-
-            // stop drag if no valid handle found
-            if(!validHandle)
-            {
-                item.__isDragging = false;
-                return;
-            }
         }
 
         // label is sprite
