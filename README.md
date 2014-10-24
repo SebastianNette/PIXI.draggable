@@ -5,6 +5,8 @@ The easiest way to get drag &amp; drop done in PIXI.js!
 
 Demo: http://mokgames.com/playground/pixi/draggable/
 
+Bag & Skillbar Demo! http://mokgames.com/playground/pixi/draggable/demo.html
+
 #### How to use ####
 Simply load the pixi.draggable.js file after your pixi.js file.
 ```
